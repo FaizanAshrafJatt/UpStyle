@@ -1,0 +1,382 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+  /* border: 1px solid red; */
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: #834b8d;
+  position: fixed;
+  top: 0;
+  transition: background-color 1s ease;
+}
+
+.navbar .nav-in {
+  margin: 0px 90px;
+}
+
+.navbar-after-scroll {
+  background-color: #0625a3;
+  box-shadow: 0px -2px 43px 5px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px -2px 43px 5px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px -2px 43px 5px rgba(0, 0, 0, 0.36);
+  transition: all 1s ease;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  /* Add your desired styles for the link */
+  color:#fff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f0a830;
+  /* Adjust the color as per your design */
+  transition: width 1s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f0a830;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+
+}
+
+
+
+.height {
+  height: 1800px;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+  background-color: red;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+  background-color: red;
+}
+
+.our-vision {
+  padding: 70px;
+  text-align: center;
+  background-color: #0625a3;
+  color: #fff;
+}
+
+.visio-h{
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+.fa-duotone{
+  position:relative;
+
+  font-size: 30px;
+  bottom:10px;
+}
+.bq-vision p {
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bq-vision .block-author {
+  color: #5e412f;
+}
+
+.we {
+  padding: 70px;
+  text-align: center;
+}
+.we-h{
+  font-size: 70px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+.we-p {
+  font-family: 'Roboto', sans-serif;
+}
+.up-foo {
+  background-color: #834b8d;
+  padding: 50px;
+  line-height: 28px;
+}
+
+.foo-h {
+  color: #fff;
+  font-weight: 900;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.foo-li li a {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.foo-li li a:hover {
+  color: #f0a830 !important;
+}
+
+.des a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease;
+}
+
+.des a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f0a830;
+  transition: width 1s ease;
+}
+
+.des a:hover {
+  color: #f0a830;
+}
+
+.des a:hover::after {
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon .tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.social-icon:hover .tooltip {
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.social-icons .social-icon .fa-twitter:hover,
+.social-icons .social-icon .fa-instagram:hover,
+.social-icons .social-icon .fa-linkedin-in:hover,
+.social-icons .social-icon .fa-facebook-f:hover {
+  color: #f0a830;
+}
+
+.end-foo {
+  background: #333;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.end-foo .foo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.end-foo .foo-a {
+  color: #fff;
+}
+
+.end-foo .foo-a:hover {
+  color: #f0a830;
+}
+/* -----------------------------What we Do Css Section -----------------------*/
+.w-banner-img{
+  width: auto;
+    height: 700px;
+    margin-top: 90px;
+    /* margin: 0px auto; */
+    background-image: url('./assets/images/What\ we\ do.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+    /* overflow: auto; */
+    background-attachment: fixed;
+}
+/* .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1262px;
+  height: 1189px;
+  opacity: 0.4;
+  background: rgb(12, 12, 12);
+  background: linear-gradient(90deg, rgb(52, 51, 51) 100%, #8cf3ab 100%, rgb(52, 51, 51) 100%, rgb(52, 51, 51) 100%);
+}  */
+.overlay .center-text{
+  position: absolute;
+ padding:200px;
+ opacity: 1 !important;
+}
+.services{
+  /* position: absolute; */
+  top:200px;
+  text-align: center;
+  padding: 90px;
+  background-color: #333;
+  height: auto;
+  color: #fff;
+}
+
+.sr-h {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sr-p {
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+}
+.hidden-section {
+  position: relative;
+  top:40px;
+  display: none;
+ padding: 70px;
+}
+.hidden-section .onclick-link li a{
+  color: #5e412f;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+.hidden-section .cen-p{
+  color: #5e412f;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* -----------------------------Products Css Section -----------------------*/
+.banner-img{
+  width: auto;
+    height: 700px;
+    margin-top: 90px;
+    /* margin: 0px auto; */
+    background-image: url('./assets/images/Innovations\ to\ reduce\ Big_Big.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+    /* overflow: auto; */
+    background-attachment: fixed;
+}
+.product{
+  text-align: center;
+  padding: 70px;
+  background-color: #333;
+  height: auto;
+  color: #fff;
+}
+.pro-p{
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+.pro-car-img{
+  
+  height:150px !important; 
+  background-image: url('https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg') ; 
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+}
+.pro-car-img:hover{
+ 
+  height:150px !important; 
+  background-image: url('https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+}
+/* .product .card {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card .card-img.active {
+  opacity: 1;
+} */
+/*Map */
+.map1{
+
+  filter: brightness(0.4) !important;
+  margin-top: 250px !important;
+  height: 526px;
+ 
+  
+  transition: 500ms !important;
+}
+.map1:hover{
+  transition: 500ms !important;
+  filter: brightness(1) !important;
+}

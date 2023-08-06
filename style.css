@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dancing+Script:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+  /* border: 1px solid red; */
+  scroll-behavior: smooth;
+  /* font-family: 'Secular One', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  
+  background-color: #2f5e41;
+  /* background-image: linear-gradient(to left, #ff5c98,   #7b40c0); */
+  position: fixed;
+  top: 0;
+  transition: background-color 1s ease;
+}
+
+.navbar .nav-in {
+  margin: 0px 90px;
+}
+
+.navbar-after-scroll {
+  /* background-color: #0625a3; */
+  box-shadow: 0px -2px 43px 5px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px -2px 43px 5px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px -2px 43px 5px rgba(0, 0, 0, 0.36);
+  transition: all 1s ease;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  /* Add your desired styles for the link */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f0a830;
+  /* Adjust the color as per your design */
+  transition: width 1s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f0a830;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
+.our-vision  {
+  position: relative;
+  background-image: url('assets/images/have.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom : 20px ;
+  opacity: 1;
+  padding: 50px;
+  z-index:-55;
+  text-align: center;
+  /* background-color: ; */
+  color: rgb(250, 250, 250);
+ 
+}
+.our-vision::before{
+background-color: #78c0a8;
+  /* background-image: linear-gradient(to left, #ff5c98,   #7b40c0); */
+  position: absolute;
+width: 100%;
+height: 100%;
+bottom: 0;
+left: 0;
+content: "";
+border-radius: 10px;
+opacity: 0.85;
+z-index: -1;
+}
+.visio-h {
+  font-size: 50px;
+  font-weight: 900;
+text-transform: uppercase;
+  font-family: 'Secular One', sans-serif;
+  
+}
+
+.fa-quote-left{
+  position: relative;
+
+  font-size: 30px;
+  bottom: 10px;
+}
+
+.fa-quote-right{
+  position: relative;
+
+  font-size: 30px;
+  bottom: 10px;
+}
+.bq-vision p {
+  font-size: 23px;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+
+
+.we {
+  padding: 70px;
+  text-align: center;
+}
+
+.we-h {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: 'Secular One', sans-serif;
+}
+
+.we-p {
+  line-height: 34px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.up-foo {
+  background-color: #614b36;
+  /* background: #333; */
+  padding: 50px;
+  line-height: 28px;
+  /* opacity: 0.8; */
+}
+.up-foo .des-p{
+  line-height: 34px;
+}
+.foo-h {
+  color: #fff;
+  font-weight: 900;
+}
+
+.text-white {
+  color: #fff;
+  font-family: 'Robot', sans-serif;
+}
+
+.foo-li li a {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  line-height: 34px;
+}
+
+.foo-li li a:hover {
+  color: #f0a830 !important;
+}
+
+.des a {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease;
+}
+
+.des a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f0a830;
+  transition: width 1s ease;
+}
+
+.des a:hover {
+  color: #f0a830;
+}
+
+.des a:hover::after {
+  width: 100%;
+}
+
+.drag {
+  position: absolute;
+  top: 47px;
+}
+
+.up-foo .sec-col {
+  padding-left: 40px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+
+}
+
+.social-icon .tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+
+}
+
+.social-icon:hover .tooltip {
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 35px;
+  height: 58px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.social-icons .social-icon .fa-twitter:hover,
+.social-icons .social-icon .fa-instagram:hover,
+.social-icons .social-icon .fa-linkedin-in:hover,
+.social-icons .social-icon .fa-facebook-f:hover {
+  color: #f0a830;
+
+}
+
+.end-foo {
+  background: #5e412f;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.end-foo .foo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.end-foo .foo-a {
+  color: #fff;
+}
+
+.end-foo .foo-a:hover {
+  color: #f0a830;
+}
+
+/* -----------------------------What we Do Css Section -----------------------*/
+.w-banner-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 490px;
+  margin-top: 82px;
+  background-image: url('./assets/images/What we do.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background: rgb(12, 12, 12);
+  background: linear-gradient(90deg, rgb(52, 51, 51) 100%, #0625a3 100%, rgb(52, 51, 51) 100%, rgb(52, 51, 51) 100%);
+  
+}
+
+.center-text {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 700px;
+  
+}
+
+.center-text h1 {
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+}
+
+.services {
+  /* position: absolute; */
+  top: 200px;
+  text-align: center;
+  padding: 90px;
+  
+  height: auto;
+  /* color: #fff; */
+  overflow: hidden;
+}
+.services p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.services .ser-h{
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Secular One', sans-serif;
+  text-transform: uppercase;
+}
+.services .sr-card{
+padding: 20px;
+background-color: #2f5e41;
+color: #fff;
+}
+
+.sr-h {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sr-p {
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hidden-section {
+  position: relative;
+  top: 40px;
+  display: none;
+  padding: 70px;
+}
+
+.hidden-section .onclick-link li a {
+  color: #5e412f;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+.hidden-section .onclick-link li a:hover {
+  color: #f0a830;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hidden-section .cen-p {
+  color: #5e412f;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+/*stocks animaion*/
+@keyframes slide-in {
+  0% { opacity: 0; transform: translateY(100%); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animation-element {
+  animation: slide-in 2s ease-in-out;
+  animation-fill-mode: forwards;
+  font-family: 'Secular One', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* -----------------------------Products Css Section -----------------------*/
+.p-banner-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 490px;
+  margin-top: 82px;
+  background-image: url('./assets/images/Innovations\ to\ reduce\ Big_Big.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.p-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: rgb(12, 12, 12);
+  background: linear-gradient(90deg, rgb(52, 51, 51) 100%, #0625a3 100%, rgb(52, 51, 51) 100%, rgb(52, 51, 51) 100%);
+}
+
+.p-center-text {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 700px;
+  
+}
+
+.p-center-text h1 {
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.p-center-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+.product {
+  text-align: center;
+  padding: 70px;
+  /* background-color: #333; */
+  height: auto;
+  /* color: #fff; */
+}
+.product .pro-h{
+  font-size: 50px;
+  
+  text-transform: uppercase;
+}
+.product p{
+  font-family: 'Roboto', sans-serif;
+}
+.pro-p {
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+.product .sp-color{
+  background-color: #2f5e41;
+}
+.pro1{
+font-weight: bolder !important;
+font-family: 'Belanosima', sans-serif !important;
+}
+.f-c-img {
+
+  height: 230px !important;
+  background-image: url('./assets/images/polo-1.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.f-c-img:hover {
+
+  height: 230px !important;
+  background-image: url('./assets/images/polo-2.jpg');
+  background-size: cover;
+  /* transition: background-image 2.5s ease-in-out; */
+}
+.s-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-3.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.s-c-img:hover {
+
+  height: 230px !important;
+  background-image: url('./assets/images/polo-4.jpg');
+  background-size: cover;
+  /* transition: background-image 2.5s ease-in-out; */
+}
+.t-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-5.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.t-c-img:hover {
+
+  height: 230px !important;
+  background-image: url('./assets/images/polo-6.jpg');
+  background-size: cover;
+  /* transition: background-image 2.5s ease-in-out; */
+}
+.fo-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-7.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.fo-c-img:hover{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-8.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.fi-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-9.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.fi-c-img:hover{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-10.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.si-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-11.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.si-c-img:hover{
+  height: 230px !important;
+  background-image: url('./assets/images/polo-12.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.se-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/trouser-1.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.se-c-img:hover{
+  height: 230px !important;
+  background-image: url('./assets/images/trouser-5.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.e-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/trouser-3.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.e-c-img:hover{
+  height: 230px !important;
+  background-image: url('./assets/images/trouser-4.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.n-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/trouser-2.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.n-c-img:hover{
+  height: 230px !important;
+  background-image: url('./assets/images/trouser-6.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+.te-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/hoodie-1.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.el-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/hoodie-3.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.tv-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/hoodie-2.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.th-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/short-1.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.fr-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/short-4.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.ff-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/short-2.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.sx-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/sandos-1.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.sv-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/sandos-2.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.et-c-img{
+  height: 230px !important;
+  background-image: url('./assets/images/sandos-3.jpg');
+  background-size: cover;
+  transition: background-image 2.5s ease-in-out;
+}
+
+.product p {
+  color: white;
+  margin-top: 5px;
+  font-size: 24px !important;
+ font-family: 'Dancing Script', cursive;
+
+}
+/* ---------------------------------------------------COntact Css-------------------------------------- */
+.c-banner-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 490px;
+  margin-top: 82px;
+  background-image: url('./assets/images/Contact\ us.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.c-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background: rgb(12, 12, 12);
+  background: linear-gradient(90deg, rgb(52, 51, 51) 100%, #0625a3 100%, rgb(52, 51, 51) 100%, rgb(52, 51, 51) 100%);
+} 
+.c-center-text{
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 700px;
+}
+.c-center-text h1 {
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.c-center-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.map1 {
+
+  filter: brightness(0.4) !important;
+  margin-top: 45px ;
+  height: 526px;
+  transition: 500ms !important;
+}
+
+.map1:hover {
+  transition: 500ms !important;
+  filter: brightness(1) !important;
+}

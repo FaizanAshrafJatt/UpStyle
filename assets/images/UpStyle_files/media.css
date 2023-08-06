@@ -1,0 +1,53 @@
+@media screen  and (min-width:300px){
+    .navbar .nav-in{
+        margin: 0px 10px;
+      }
+      .overlay .center-text{
+        position: absolute;
+       padding:1px;
+      }
+      .services{
+        text-align: center;
+        padding: 90px;
+        background-color: #333;
+        height: auto;
+        color: #fff;
+      }
+      .sr-h{
+        font-size: 40px;
+      font-weight: 800;
+      font-family: 'Roboto', sans-serif;
+      }
+      .sr-p{
+        font-size: 19px;
+        font-family: 'Roboto', sans-serif;
+      }
+}
+@media screen  and (min-width:560px){
+    .navbar .nav-in{
+        margin: 0px 20px;
+      }
+      .our-vision{
+        padding: 40px;
+        text-align: center;
+        background-color: #0625a3;
+      }
+      .our-vision h1{
+      font-size: 50px;
+      font-weight: 800;
+      font-family: 'Roboto', sans-serif;
+      }
+      .bq-vision{
+        padding: 20px 200px;
+      }
+      .bq-vision p{
+        font-size: 23px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .overlay .center-text{
+        position: absolute;
+       padding:100px;
+      }
+      
+      
+}

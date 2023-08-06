@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Title-->
+  <title>UpStyle</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  <!--AOS CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Css Style sheet-->
+  <link rel="stylesheet" href="../style.css">
+  <!--Codepen File-->
+  <link rel="stylesheet" href="https://cdn.example.com/library.css">
+  <!--Navbar link mdb-->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--Css media queries-->
+  <link rel="stylesheet" href="../media.css">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- CSS CDN -->
+  <!--Stack path-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!--Codepen carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!--Animations-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+
+  <!-----------------------Section no 1 Navbar Start------------------------>
+  <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-0 p-0">
+    <div class="container-fluid nav-in py-3">
+      <a class="navbar-brand" href="#"><img src="../assets/images/UP STYLE_3.png" alt="" height="40px"></a>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link me-2" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-2" href="./what.html">What we do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-2" href="./product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-2" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- section no 2
+  <div class="height">
+</div> -->
+  <!-----------------------Section no 1 Navbar End------------------------>
+  <!------------------------------Banner Image Start----------------------------->
+  <div id="what" class="w-banner-img">
+    <!--Overlay Section -->
+    <div class="overlay"></div>
+    <div class="center-text">
+      <h1 data-aos="fade-up">
+        Unleashing Fashion's Finest
+      </h1>
+
+    </div>
+  </div>
+  <!------------------------------Banner Image End----------------------------->
+  <!------------------------Section no 2 services section-->
+  <section class="services">
+    <h1 class="ser-h" data-aos="fade-up">Our Services</h1>
+    <p class="ser-p" data-aos="fade-up">Discover the exceptional services offered by Upstyle Apparells, tailored to
+      elevate your
+      fashion experience.</p>
+    <div class="row">
+      <div class="col-sm-6 col-md-6  mt-3" id="fo-k-link">
+        <a class="text-decoration-none" href="#">
+          <div class="card sr-card pb-0 " onclick="showSection('knitting-section')" data-aos="fade-up">
+            <img data-aos="fade-up" src="../assets/images/carousel-one.jpg" alt=".....">
+            <h3 data-aos="fade-up" class="mt-2">Knitting</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-6  mt-3" id="fo-c-link">
+        <a class="text-decoration-none" href="#">
+          <div class="card sr-card pb-0 " onclick="showSection('cutting-section')" data-aos="fade-up">
+            <img data-aos="fade-up" src="../assets/images/carousel-two.jpg" alt=".....">
+            <h3 class="mt-2" data-aos="fade-up">Cutting</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row mt-1">
+      <div class="col-sm-6 col-md-6 mt-3" id="fo-s-link">
+        <a class="text-decoration-none" href="#">
+          <div class="card sr-card pb-0 " onclick="showSection('stitching-section')" data-aos="fade-up">
+            <img data-aos="fade-up" src="../assets/images/stiching.jpg" alt=".....">
+            <h3 class="mt-2" data-aos="fade-up">Stitching</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-6 mt-3" id="fo-f-link">
+        <a class="text-decoration-none" href="#">
+          <div class="card sr-card pb-0" onclick="showSection('finishing-section')" data-aos="fade-up">
+            <img data-aos="fade-up" src="../assets/images/carousel-three.jpg" alt=".....">
+            <h3 class="mt-2" data-aos="fade-up">Finishing</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center " id="fo-st-link">
+      <div class="col-sm-6 col-md-6 mt-3">
+        <a class="text-decoration-none" href="#">
+          <div class="card sr-card pb-0 " data-aos="fade-up" onclick="showSection('stock-section')">
+            <img data-aos="fade-up" src="../assets/images/stock.jpg" alt=".....">
+            <h3 class="mt-2" data-aos="fade-up">Stocks</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------hidden knitting sectio 7tfhbza12q aASDFCXZ  n on click onpening sections ---------------------------->
+  <section id="knitting-section" class="hidden-section">
+    <div class="hidden-knitting">
+      <div class="col-12 text-center mb-3">
+        <h1>Services</h1>
+      </div>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-6 ms-auto">
+            <h4>Knitting</h4>
+            <p class="cen-p">In our knitting section, equipped with 17 advanced machines, we bring fabrics to life.
+              With precision and expertise, we transform yarn into intricate patterns, creating textiles of
+              exceptional quality. Our knitting process ensures durability, comfort, and an impeccable finish for
+              every fabric we produce..</p>
+            <blockquote>
+              <div class="animation-element">
+                ❝Crafting fabrics that embrace you with comfort and style.❞ </div>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <div class="card  sr-card">
+              <img src="../assets/images/carousel-one.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <button class="btn shadow-none text-bg-success mt-3 ms-4" onclick="goBack()">Back to Services</button>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------hidden Cutting section on click onpening sections ---------------------------->
+  <section id="cutting-section" class="hidden-section">
+    <div class="hidden-cutting">
+      <div class="col-12 text-center mb-5">
+        <h1>Services</h1>
+      </div>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-6 ms-auto">
+            <h4>Cutting</h4>
+            <p class="cen-p">In our cutting section, efficiency meets precision. Equipped with state-of-the-art
+              cutting machines, we meticulously transform fabrics into precise patterns and shapes. With a focus on
+              efficiency and attention to detail, we streamline the cutting process to optimize material utilization
+              and minimize waste.</p>
+            <blockquote>
+              <div class="animation-element">
+                ❝Unleashing creativity through meticulous cuts and patterns.❞ </div>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-2">
+              <img src="../assets/images/carousel-two.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <button class="btn shadow-none text-bg-success" onclick="goBack()">Back to Services</button>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------hidden Stiching section on click onpening sections ---------------------------->
+  <section id="stitching-section" class="hidden-section">
+    <div class="hidden-stiching">
+      <div class="col-12 text-center mb-5">
+        <h1>Services</h1>
+      </div>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-6 ms-auto">
+            <h4>Stitching</h4>
+            <p class="cen-p">In our stitching section, powered by 42 advanced machines, we combine expertise and
+              technology to create exceptional garments. . With a focus on efficiency and craftsmanship, we deliver
+              high-quality products that meet the highest standards of durability and aesthetics.</p>
+            <blockquote>
+              <div class="animation-element">
+                ❝Precision stitching that weaves the story of exceptional garments ❞ </div>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-2">
+              <img src="../assets/images/stiching.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <button class="btn shadow-none text-bg-success" onclick="goBack()">Back to Services</button>
+      </div>
+    </div>
+
+  </section>
+  <!-- ------------------------hidden Finishing section on click onpening sections ---------------------------->
+  <section id="finishing-section" class="hidden-section">
+    <div class="hidden-finishing">
+      <div class="col-12 text-center mb-5">
+        <h1>Services</h1>
+      </div>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-6 ms-auto">
+            <h4>Finishing</h4>
+            <p class="cen-p">In our finishing department, where the final touches are added, we ensure that each
+              garment is perfected before packaging.With utmost care, we guarantee that every garment leaving our
+              finishing department is of the highest quality and presentation, ready to be packaged and delivered to
+              our valued customers.</p>
+            <blockquote>
+              <div class="animation-element">
+                ❝Sealing style and elegance with a touch of packaging magic.❞ </div>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-2">
+              <img src="../assets/images/carousel-three.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <button class="btn shadow-none text-bg-success" onclick="goBack()">Back to Services</button>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------hidden Stock section on click onpening sections ---------------------------->
+  <section id="stock-section" class="hidden-section">
+    <div class="hidden-stock">
+      <div class="col-md-12 text-center mb-5">
+        <h1>Services</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ms-auto">
+            <h4>Stocks</h4>
+            <p class="cen-p">In our stocks section, we maintain a well-organized and efficient inventory system.
+              With meticulous record-keeping and real-time tracking, we ensure accurate stock management. Our
+              dedicated team monitors and replenishes inventory levels to meet customer demands promptly. </p>
+            <blockquote>
+              <div class="animation-element">
+                ❝Ensuring a seamless supply of your favorite styles, just a step away.❞
+              </div>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-2">
+              <img src="../assets/images/stock.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <button class="btn shadow-none text-bg-success" onclick="goBack()">Back to Services</button>
+      </div>
+    </div>
+  </section>
+  <!-----------------------------Section  no 5 Footer  ------------------------>
+  <footer class="up-foo">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <h3 class="foo-h" >About Us</h3>
+          <p class="text-white mt-4 des-p">With our style, quality craftsmanship, and artistic flair,
+            we inspire
+            creativity in the
+            textile industry. Redefining fashion through innovative designs, we lead with excellence in fabric
+            production.</p>
+          <img class="mt-2" src="../assets/images/UP STYLE_3.png"  height="50px" alt="">
+          <div class="des mt-3"> <a class="text-decoration-none " href="#">Unleashing Style,
+              Crafting
+              Quality</a>
+          </div>
+
+        </div>
+        <div class="col-md-3 sec-col">
+          <h3 class="foo-h">Services</h3>
+          <ul class="list-unstyled foo-li mt-4">
+            <li>
+              <a class="text-decoration-none" href="./what.html#fo-k-link"><i class="fa-solid fa-angle-right"
+                  ></i> Knitting
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="./what.html#fo-c-link" ><i
+                  class="fa-solid fa-angle-right" ></i>
+                Cutting</a>
+            </li>
+
+            <li>
+              <a class="text-decoration-none" href="./what.html#fo-s-link" ><i
+                  class="fa-solid fa-angle-right" ></i>
+                Stiching</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="./what.html#fo-f-link" ><i
+                  class="fa-solid fa-angle-right" ></i>
+                Finishing</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="./what.html#fo-st-link" ><i
+                  class="fa-solid fa-angle-right" ></i>
+                Stock</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="drag ">
+            <img  src="../assets/images/world-map.png" alt="">
+          </div>
+          <h3 class="foo-h" >Head Office</h3>
+
+          <p class="text-white mt-4" > Sheikh Colony Block 14-C ABC Road , 
+ Faislabad</p>
+          <p class="text-white" ><i class="fa fa-duotone fa-phone"></i> +92 3146602279</p>
+          <p class="text-white" ><i class="fa fa-sharp fa-solid fa-envelope"></i>
+            hamzaabrar175@gmail.com</p>
+          <h3 class="foo-h" >Follow Us</h3>
+          <div class="social-icons mt-4">
+            <a class="social-icon social-icon--twitter text-decoration-none text-white" href="#" target="_blank">
+              <i class="fa-brands fa-twitter" ></i>
+              <div class="tooltip">Twitter</div>
+            </a>
+            <a class="social-icon social-icon--instagram  text-decoration-none text-white" href="#" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              <div class="tooltip">Instagram</div>
+            </a>
+            <a class="social-icon social-icon--linkedin  text-decoration-none text-white" href="#" target="_blank">
+              <i class="fa-brands fa-linkedin-in" ></i>
+              <div class="tooltip">LinkedIn</div>
+            </a>
+            <a class="social-icon social-icon--facebook  text-decoration-none text-white" href="#" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+              <div class="tooltip">Facebook</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-----------------------------Section  no 5 Footer End  ------------------------>
+  <!-------------------Section no 6 End Footer ------------------->
+  <footer>
+    <div class="end-foo">
+      <div class="container mt-3">
+        <div class="d-flex justify-content-between ">
+          <div class="col-md-6">
+            <p class="foo">© All Rights Reserved, Upstyle. Pvt Ltd </p>
+          </div>
+          <div class="col-md-6 ">
+            <a class="float-end foo text-decoration-none foo-a" href="#">Terms • Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-------------------Section no 6 End Footer  End ------------------->
+
+
+  <!-- JS CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!--Owl Carousel-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <!--JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--Bootstrap Js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!--Codepen script-->
+  <script src="https://cdn.example.com/library.js"></script>
+  <!--AOS JS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Navabar link mdb-->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Stack path-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--Javascript file-->
+  <script src="../script.js"></script>
+</body>
+
+</html>

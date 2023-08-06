@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .services {
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden-section {
+  display: none;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="row">
+          <div class="card" onclick="showSection('knitting-section')">
+            <h3>Knitting</h3>
+            <p>Description of knitting service</p>
+          </div>
+          <div class="card" onclick="showSection('dying-section')">
+            <h3>Dying</h3>
+            <p>Description of dying service</p>
+          </div>
+          <div class="card" onclick="showSection('cutting-section')">
+            <h3>Cutting</h3>
+            <p>Description of cutting service</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card" onclick="showSection('stitching-section')">
+            <h3>Stitching</h3>
+            <p>Description of stitching service</p>
+          </div>
+          <div class="card" onclick="showSection('finishing-section')">
+            <h3>Finishing</h3>
+            <p>Description of finishing service</p>
+          </div>
+          <div class="card" onclick="showSection('checking-section')">
+            <h3>Checking</h3>
+            <p>Description of checking service</p>
+          </div>
+        </div>
+      </section>
+      <section id="knitting-section" class="hidden-section">
+        <h2>Knitting Section</h2>
+        <p>Content of knitting section</p>
+        <button onclick="goBack()">Back to Services</button>
+      </section>
+      
+      <section id="dying-section" class="hidden-section">
+        <h2>Dying Section</h2>
+        <p>Content of dying section</p>
+        <button onclick="goBack()">Back to Services</button>
+      </section>
+       kisis liya bhi nai ha fzool ha bas lag gaya is ka codeok nujhe js smjhou ye kese kam khi he h
+      <!-- Repeat the same structure for the other sections -->
+      
+<script>
+    function showSection(sectionId) {
+  // Hide the services section
+  document.querySelector('.services').style.display = 'none';
+
+  // Show the targeted section
+  document.getElementById(sectionId).style.display = 'block';
+}
+
+function goBack() {
+  // Show the services section
+  document.querySelector('.services').style.display = 'block';
+
+  // Hide the current section
+  document.querySelector('.hidden-section').style.display = 'none';
+}
+
+</script>      
+</body>
+</html>

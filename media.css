@@ -1,0 +1,305 @@
+@media screen  and (min-width:300px){
+    .navbar .nav-in{
+        margin: 0px 10px;
+      }
+     
+      .sr-h{
+        font-size: 40px;
+      font-weight: 800;
+      font-family: 'Roboto', sans-serif;
+      }
+      .sr-p{
+        font-size: 19px;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+}
+@media screen and (max-width:716px) {
+  .slideshow {
+        position: relative;
+        width: 100%;
+        height: 440px;
+        overflow: hidden;
+      }
+  .center-text {
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 448px;
+  }
+  .p-center-text {
+    padding: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 448px;
+  }
+  .c-center-text{
+    padding: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 448px;
+  }
+  .services{
+    text-align: center;
+    padding: 30px;
+    height: auto;
+  }
+  .services .ser-h{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+  }
+  .services .ser-p{
+    font-size: 16px;
+  }
+  .product{
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    height: auto;
+    color: #fff;
+  }
+  .services .sr-card{
+    padding: 30px;
+    }
+    .hidden-section {
+      position: relative;
+      top: 40px;
+      display: none;
+      padding: 30px;
+    }
+    
+    .hidden-section .onclick-link li a {
+      color: #5e412f;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .hidden-section .onclick-link li a:hover {
+      color: #f0a830;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .hidden-section .cen-p {
+      color: #5e412f;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+    }
+}
+@media screen  and (max-width:560px){
+    .navbar .nav-in{
+        margin: 0px 20px;
+      }
+      .our-vision {
+        padding: 20px;
+        text-align: center;
+        background-color: #0625a3;
+        color: #fff;
+      }
+      .visio-h{
+        font-size: 30px;
+        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
+      }
+      .bq-vision p {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .fa-duotone{
+        position:relative;
+      
+        font-size:10px;
+        bottom:10px;
+      }
+      .we {
+        padding: 20px;
+        text-align: center;
+      }
+      .we-h{
+        font-size: 30px;
+        /* font-weight: 900; */
+        font-family: 'Roboto', sans-serif;
+      }
+      .we-p {
+        font-family: 'Roboto', sans-serif;
+      }
+      .up-foo {
+        background-color: #34a0a4;
+        padding: 20px;
+        line-height: 28px;
+      }
+      .up-foo .sec-col{
+        padding-left:20px ;
+      }
+      
+      .w-banner-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 500px;
+        margin-top: 82px;
+        background-image: url('./assets/images/What we do.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        position: relative;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: rgb(12, 12, 12);
+        background: linear-gradient(90deg, rgb(52, 51, 51) 100%, #0625a3 100%, rgb(52, 51, 51) 100%, rgb(52, 51, 51) 100%);
+      }
+      
+      .center-text {
+        padding: 21px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 289px;
+      }
+      
+      .center-text h1 {
+        font-weight: 900;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      
+      .center-text p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+      }
+      /* .services .ser-h{
+        font-size: 29px;
+        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+      }  */
+      .product .pro-h{
+        font-size: 29px;
+        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+      } 
+      .p-banner-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 500px;
+        margin-top: 82px;
+        background-image: url('./assets/images/Innovations\ to\ reduce\ Big_Big.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        position: relative;
+      }
+      
+      .p-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: rgb(12, 12, 12);
+        background: linear-gradient(90deg, rgb(52, 51, 51) 100%, #0625a3 100%, rgb(52, 51, 51) 100%, rgb(52, 51, 51) 100%);
+      }
+      
+      .p-center-text {
+        padding: 21px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 289px;
+      }
+      
+      .p-center-text h1 {
+        font-weight: 900;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      
+      .p-center-text p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+      }
+      .c-banner-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 500px;
+        margin-top: 82px;
+        background-image: url('./assets/images/Contact\ us.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        position: relative;
+      }
+      
+      .c-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: rgb(12, 12, 12);
+        background: linear-gradient(90deg, rgb(52, 51, 51) 100%, #0625a3 100%, rgb(52, 51, 51) 100%, rgb(52, 51, 51) 100%);
+      }
+      
+      .c-center-text {
+        padding: 21px;
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 289px;
+      }
+      
+      .c-center-text h1 {
+        font-weight: 900;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      
+      .c-center-text p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+      }
+      .we .ld{
+        margin-top: 20px;
+      }
+}
